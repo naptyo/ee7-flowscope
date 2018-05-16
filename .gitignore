@@ -25,3 +25,4 @@ hs_err_pid*
 FlowsAppEJB/.settings/
 FlowsApp/.settings/
 FlowsAppWeb/.settings/
+.recommenders/

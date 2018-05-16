@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	
+<h:head>
+	<title>Registration 1</title>
+</h:head>
+	
+<h:body>
+	<h:form style="width:500px; margin: 0 auto;">
+		<h:panelGrid columns="2">
+			<h:outputText value="Post Code" />
+			<h:inputText value="#{registrationBean.post_code}" />
+			
+			<h:outputText value="City" />
+			<h:inputText value="#{registrationBean.city}" />
+		
+			<h:commandButton value="Next" action="registrationC" />
+			<h:commandButton value="Back" action="registration" /> 
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

@@ -7,13 +7,19 @@
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 	
 <h:head>
-	<title>Flows</title>
+	<title>Registration 1</title>
 </h:head>
 	
 <h:body>
-	<h:form>
-		<h:panelGrid>
-			<h:commandButton value="Enter Registration" action="registration" /> <!-- Sesuai dengan ID registration -->
+	<h:form style="width:500px; margin: 0 auto;">
+		<h:panelGrid columns="2">
+			<h:outputText value="First Name" />
+			<h:inputText value="#{registrationBean.firstname}" />
+			
+			<h:outputText value="Last Name" />
+			<h:inputText value="#{registrationBean.lastname}" />
+		
+			<h:commandButton value="Next" action="registrationB" /> 
 		</h:panelGrid>
 	</h:form>
 </h:body>
